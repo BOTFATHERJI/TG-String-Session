@@ -1,12 +1,12 @@
 import asyncio
 
 from bot import bot, HU_APP
-from pyromod import listen
+from telemod import listen
 from asyncio.exceptions import TimeoutError
 
-from pyrogram import filters, Client
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram.errors import (
+from telethon import filters, Client
+from telethon.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from telethon.errors import (
     SessionPasswordNeeded, FloodWait,
     PhoneNumberInvalid, ApiIdInvalid,
     PhoneCodeInvalid, PhoneCodeExpired
